@@ -1,0 +1,70 @@
+<div *ngIf="data">
+    <!-- Page Title -->
+    <div class="page-title-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-7">
+                    <h2>{{data.pageBannerTitle}}</h2>
+                </div>
+                <div class="col-lg-6 col-md-5">
+                    <ul class="page-title-content">
+                        <li><a routerLink="/">Home</a></li>
+                        <li>{{data.pageBannerTitle}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about-area pt-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12">
+                    <div class="about-content">
+                        <h2>{{data.title}}</h2>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-12">
+                    <div class="about-text">
+                        <div markdown ngPreserveWhitespaces>
+                            {{data.longDesc}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="about-image" *ngFor="let image of data.aboutImg;">
+                        <img [src]="image.url" alt="about-image">
+                    </div>
+                </div>
+            </div>
+            <div class="funfacts-area">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3 col-6 col-sm-3" *ngFor="let content of data.funfactsList;">
+                        <div class="single-funfacts-box">
+                            <div class="icon">
+                                <i class="{{content.icon}}"></i>
+                            </div>
+                            <h3>{{content.title}}</h3>
+                            <span class="number">{{content.number}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-team></app-team>
+
+<div class="facility-area pb-100">
+    <app-facility></app-facility>
+</div>
+
+<app-feedback></app-feedback>
+
+<div class="partner-area ptb-100">
+    <app-partner></app-partner>
+</div>
+
+<app-subscribe></app-subscribe>

@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="facility-inner border-radius" *ngIf="data">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6 col-md-6" *ngFor="let content of data.facilityBox;">
+                <div class="single-facility-box">
+                    <div class="icon">
+                        <i class="{{content.icon}}"></i>
+                    </div>
+                    <h3>{{content.title}}</h3>
+                    <span>{{content.subTitle}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,176 @@
+.login-area {
+    text-align: center;
+}
+.cart-area {
+	.product-thumbnail {
+		width: 130px;
+
+		img {
+			border: 1px solid #dddddd;
+		}
+	}
+	.cart-table {
+		table {
+			margin-bottom: 0;
+
+			thead {
+				tr {
+					border: 1px solid #eeeeee;
+
+					th {
+						border: none;
+						padding: 20px 30px;
+						color: var(--headingColor);
+                        font: {
+                            size: 16px;
+                            weight: normal;
+                        };
+					}
+				}
+			}
+			tbody {
+				border: 1px solid #eeeeee;
+
+				tr {
+					td {
+						border-bottom: 1px solid #dedede;
+                        color: var(--paragraphColor);
+						vertical-align: middle;
+						white-space: nowrap;
+						padding: 15px 30px;
+						border: none;
+
+						&:first-child {
+							padding-left: 25px;
+						}
+						a {
+							color: var(--paragraphColor);
+							display: inline-block;
+
+                            span {
+                                display: inline-block;
+                                margin-left: 15px;
+                            }
+							&:hover {
+								color: var(--primaryColor);
+							}
+						}
+						tr {
+							margin-bottom: 15px;
+
+							&:last-child {
+								margin-bottom: 0;
+							}
+							td {
+								&:first-child {
+									padding: 0;
+								}
+								img {
+									width: 55px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Max width 767px */
+@media only screen and (max-width: 767px) {
+
+    .cart-area {
+        .cart-table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            padding: 12px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 12px 20px;
+                            white-space: nowrap;
+    
+                            &:first-child {
+                                padding-left: 12px;
+                            }
+                            a {
+                                span {
+                                    display: block;
+                                    margin: {
+                                        left: 0;
+                                        top: 8px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 576px to Max width 767px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Min width 768px to Max width 991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .cart-area {
+        .cart-table {
+            table {
+                thead {
+                    tr {
+                        th {
+                            padding: 12px 20px;
+                            font-size: 14px;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            padding: 12px 20px;
+                            white-space: nowrap;
+    
+                            &:first-child {
+                                padding-left: 12px;
+                            }
+                            a {
+                                span {
+                                    display: block;
+                                    margin: {
+                                        left: 0;
+                                        top: 8px;
+                                    };
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Min width 992px to Max width 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    
+
+}
+
+/* Min width 1200px to Max width 1399px */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {}
+
+/* Min width 1550px */
+@media only screen and (min-width: 1550px) {}

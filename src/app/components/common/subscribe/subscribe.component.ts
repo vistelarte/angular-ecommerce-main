@@ -1,0 +1,22 @@
+import { Component, OnInit } from '@angular/core';
+import { SubscribeService } from './subscribe.service';
+
+@Component({
+    selector: 'app-subscribe',
+    templateUrl: './subscribe.component.html',
+    styleUrls: ['./subscribe.component.scss']
+})
+export class SubscribeComponent implements OnInit {
+
+    public data : any;
+
+	constructor(private content : SubscribeService) {
+		this.content.getData().subscribe((data : any)=>{
+			this.data = data;
+		});
+	}
+
+    ngOnInit(): void {
+    }
+
+}

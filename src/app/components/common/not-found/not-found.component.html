@@ -1,0 +1,10 @@
+<div class="not-found-area ptb-100">
+    <div class="container">
+        <div class="not-found-content" *ngIf="data">
+            <img [src]="data.img.url" alt="error-image">
+            <h3>{{data.title}}</h3>
+            <p>{{data.desc}}</p>
+            <a routerLink="{{data.btnLink}}" class="default-btn"><i class="{{data.btnIcon}}"></i> {{data.btnText}}</a>
+        </div>
+    </div>
+</div>

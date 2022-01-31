@@ -1,0 +1,16 @@
+@import "../collection/collection.component.scss";
+#p-position{
+    position: relative;
+}
+.lr-position:nth-child(1){
+    position: relative;
+    z-index: 2;
+    left: 40px;
+}
+.lr-position:nth-child(2){
+    position: relative;
+    z-index: 1;
+    left: -40px;
+    padding: 40px;
+    bottom: 20px;
+}

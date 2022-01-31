@@ -1,0 +1,35 @@
+<div *ngIf="data">
+    <div>
+        <!-- Page Title -->
+        <div class="page-title-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <h2>{{data.pageBannerTitle}}</h2>
+                    </div>
+                    <div class="col-lg-6 col-md-5">
+                        <ul class="page-title-content">
+                            <li><a routerLink="/">Home</a></li>
+                            <li>{{data.pageBannerTitle}}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Gallery -->
+        <div class="gallery-area pt-100 pb-70">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let image of data.imageList;">
+                        <div class="single-gallery-item">
+                            <img [src]="image.image.url" alt="{{image.imgAlt}}" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-subscribe></app-subscribe>

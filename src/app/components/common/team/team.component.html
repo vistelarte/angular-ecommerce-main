@@ -1,0 +1,15 @@
+<div class="team-area pt-100 pb-70">
+    <div class="container" *ngIf="data">
+        <div class="section-title">
+            <h2><span>{{data.sectionTitle}}</span></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let content of data.teamMemberList;">
+                <div class="single-team-member">
+                    <img [src]="content.image.url" alt="team-image">
+                    <h3>{{content.name}} <span>- {{content.designation}}</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

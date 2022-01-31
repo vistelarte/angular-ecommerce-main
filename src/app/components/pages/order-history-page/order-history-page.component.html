@@ -1,0 +1,77 @@
+<!-- Page Title -->
+<div class="page-title-area">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-7">
+                <h2>Order History</h2>
+            </div>
+            <div class="col-lg-6 col-md-5">
+                <ul class="page-title-content">
+                    <li><a routerLink="/">Home</a></li>
+                    <li>Order History</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Order History -->
+<div class="order-area ptb-100">
+    <div class="container">
+        <div *ngIf="!isLoggedIn" class="login-area">
+            <a routerLink="/profile-authentication" class="default-btn"><i class="fas fa-sign-in-alt"></i> Please login to continue</a>
+        </div>
+        <div *ngIf="isLoggedIn" class="cart-area recent-order">
+            <div class="cart-table table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Product</th>
+                            <th scope="col">Order</th>
+                            <th scope="col">Payment</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let order of userOrders;">
+                            <td>
+                                <table class="table mb-0">
+                                    <tr *ngFor="let product of order.products">
+                                        <td class="product-thumbnail">
+                                            <a [routerLink]="['/products', product.slug]">
+                                                <img
+                                                    [src]="product.frontImg.url"
+                                                    alt="Image"
+                                                />
+                                                <span>
+                                                    {{product.title}}
+                                                </span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="product-price">
+                                #{{order.id}}
+                            </td>
+                            <td class="product-price">
+                                {{order.payment}}
+                            </td>
+                            <td class="product-subtotal">
+                                {{order.status}}
+                            </td>
+                            <td class="product-subtotal">
+                                ${{order.totalPrice}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div *ngIf="userOrders?.length < 1">
+                    <br>
+                    <p>There is no order history!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

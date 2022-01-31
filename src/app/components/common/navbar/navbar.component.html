@@ -1,0 +1,158 @@
+<div
+    class="navbar-area bg-nav"
+    ngStickyNav
+    stickyClass="sticky-box-shadow"
+    ngStickyNav
+    [ngStyle]="{'background-image': 'url(' + data.banner.url + ')'}"
+>
+    <div class="container-fluid">
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light"
+            [class.active]="classApplied"
+            *ngIf="data"
+        >
+            <a class="navbar-brand" routerLink="/"
+                ><img [src]="data.logo.url" alt="logo"
+            /></a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                (click)="toggleClass()"
+            >
+                <span class="burger-menu">
+                    <span class="top-bar"></span>
+                    <span class="middle-bar"></span>
+                    <span class="bottom-bar"></span>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li
+                        class="nav-item"
+                        *ngFor="let menuItem of data.menuLists"
+                    >
+                        <a
+                            routerLink="{{ menuItem.menuLink }}"
+                            [class]="
+                                menuItem.dropdowns?.length > 0
+                                    ? 'nav-link dropdown-toggle'
+                                    : 'nav-link'
+                            "
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                        >
+                            {{ menuItem.menuName }}
+                        </a>
+                        <ng-container *ngIf="menuItem.dropdowns?.length > 0">
+                            <ul class="dropdown-menu">
+                                <li
+                                    class="nav-item"
+                                    *ngFor="
+                                        let dropdownMenuItem of menuItem.dropdowns
+                                    "
+                                >
+                                    <a
+                                        routerLink="{{
+                                            dropdownMenuItem.menuLink
+                                        }}"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        class="nav-link"
+                                    >
+                                        {{ dropdownMenuItem.menuName }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </ng-container>
+                    </li>
+                </ul>
+                <ul class="navbar-nav for-responsive">
+                    <li
+                        class="nav-item"
+                        *ngFor="let menuItem of data.menuLists"
+                    >
+                        <a
+                            routerLink="{{ menuItem.menuLink }}"
+                            [class]="
+                                menuItem.dropdowns?.length > 0
+                                    ? 'nav-link dropdown-toggle'
+                                    : 'nav-link'
+                            "
+                            routerLinkActive="active"
+                            [routerLinkActiveOptions]="{ exact: true }"
+                        >
+                            {{ menuItem.menuName }}
+                        </a>
+                        <ng-container *ngIf="menuItem.dropdowns?.length > 0">
+                            <ul class="dropdown-menu">
+                                <li
+                                    class="nav-item"
+                                    *ngFor="
+                                        let dropdownMenuItem of menuItem.dropdowns
+                                    "
+                                >
+                                    <a
+                                        routerLink="{{
+                                            dropdownMenuItem.menuLink
+                                        }}"
+                                        routerLinkActive="active"
+                                        [routerLinkActiveOptions]="{
+                                            exact: true
+                                        }"
+                                        class="nav-link"
+                                    >
+                                        {{ dropdownMenuItem.menuName }}
+                                    </a>
+                                </li>
+                            </ul>
+                        </ng-container>
+                    </li>
+                </ul>
+                <!--div class="others-option d-flex align-items-center">
+                    <div class="option-item">
+                        <div class="search-box">
+                            <input
+                                type="text"
+                                class="input-search"
+                                placeholder="Search for products"
+                            />
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="option-item" *ngIf="!isLoggedIn">
+                        <a
+                            routerLink="/profile-authentication"
+                            class="user-account"
+                        >
+                            <i class="far fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="option-item" *ngIf="isLoggedIn">
+                        <a
+                            (click)="logOutUser()"
+                            class="user-account"
+                        >
+                            <i class="fas fa-sign-out-alt"></i>
+                        </a>
+                    </div>
+                    <div class="option-item">
+                        <a routerLink="/wishlist" class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                            <span>03</span>
+                        </a>
+                    </div>
+                    <div class="option-item">
+                        <a routerLink="/cart" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>{{ cartProducts.length }}</span>
+                        </a>
+                    </div>
+                </div-->
+            </div>
+        </nav>
+    </div>
+</div>

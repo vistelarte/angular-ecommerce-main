@@ -1,0 +1,22 @@
+<div class="collection-area pb-70">
+    <div class="container">
+        <div class="row justify-content-center" id="p-position" *ngIf="data">
+            <div class="col-lg-6 col-md-6 lr-position" *ngFor="let content of data.ads;">
+
+                <div class="single-collection-item">
+                    <img [src]="content.image.url" alt="collection-image">
+                    <div class="content">
+                        <h3>
+                            {{content.textNo1}}
+                            <span>{{content.textNo2}}</span>
+                            {{content.textNo3}}
+                        </h3>
+                        <a routerLink="{{content.btnLink}}" class="default-btn"><i class="{{content.btnIcon}}"></i> {{content.btnText}}</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="shape2"><img src="assets/img/shape/shape2.png" alt="shape"></div>
+</div>
