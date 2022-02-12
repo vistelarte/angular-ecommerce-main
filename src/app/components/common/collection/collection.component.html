@@ -1,11 +1,12 @@
 <div class="collection-area pt-100 pb-70">
     <div class="container">
         <div class="row justify-content-center" *ngIf="data">
+            <h2 class="collection-1">{{data.Title[0]}} <p class="collection-2">{{data.Title[1]}} </p> </h2>
             <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let content of data.collectionBox;">
                 <div class="single-collection-box">
                     <img [src]="content.image.url" alt="collection-image">
                     <div class="content">
-                        <h3>{{content.title}} <span>{{content.numberOfItems}}</span></h3>
+                     <h3>{{content.title}}<span>{{content.numberOfItems}}</span></h3>
                     </div>
                     <a routerLink="{{content.detailsLink}}" class="link-btn"></a>
                 </div>

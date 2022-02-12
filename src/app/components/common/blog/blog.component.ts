@@ -14,6 +14,7 @@ export class BlogComponent implements OnInit {
 	constructor(private content : BlogService) {
 		this.content.getData().subscribe((data : any)=>{
 			this.data = data;
+			console.log(this.data)
 		});
 		this.content.getData2().subscribe((data2 : any)=>{
 			this.data2 = data2;

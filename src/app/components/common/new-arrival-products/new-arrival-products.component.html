@@ -2,8 +2,11 @@
     <div class="container">
         <div class="section-title" *ngIf="titleData">
             <h2><span>{{titleData.title}}</span></h2>
-            <p>{{titleData.desc}}</p>
+            <p class="text-2">{{titleData.desc}}</p>
         </div>
+
+
+
         <!--div class="products-slides-two" *ngIf="data">
             <owl-carousel-o [options]="productsSlides">
                 <ng-template carouselSlide *ngFor="let content of data;">

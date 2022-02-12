@@ -13,6 +13,9 @@ export class CollectionComponent implements OnInit {
 	constructor(private content : CollectionService) {
 		this.content.getData().subscribe((data : any)=>{
 			this.data = data;
+            this.data.Title = this.data.Title.split(" ");
+           
+            
 		});
 	}
 

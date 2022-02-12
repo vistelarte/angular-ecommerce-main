@@ -4,7 +4,7 @@
 Default CSS
 =================================================*/
 :root {
-    --fontFamily: 'Jost', sans-serif;
+    --fontFamily: 'Cormorant Garamond', serif;
     --mainColor: #CF0018;
     --whiteColor: #ffffff;
     --blackColor: #000000;
@@ -22,7 +22,7 @@ body {
     };
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+    font-weight: 500;
     color: var(--blackColor);
 }
 a {

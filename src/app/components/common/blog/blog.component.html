@@ -1,8 +1,8 @@
 <div class="blog-area pt-100 pb-70">
     <div class="container">
         <div class="section-title" *ngIf="data">
-            <h2><span>{{data.sectionTitle}}</span></h2>
-            <p>{{data.sectionTitleDesc}}</p>
+            <img [src]= "data.Image.url">
+            <p class="p.text-2">{{data.sectionTitleDesc}}</p>
         </div>
         <div class="row justify-content-center" *ngIf="data2">
             <div class="col-lg-4 col-md-6" *ngFor="let content of data2.slice(0, 3);">

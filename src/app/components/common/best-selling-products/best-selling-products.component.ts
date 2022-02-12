@@ -37,6 +37,7 @@ export class BestSellingProductsComponent implements OnInit {
         });
         this.content.sectionTitleData().subscribe((titleData: any) => {
             this.titleData = titleData;
+            this.titleData = Image;
         });
         this.notifier = notifierService;
     }
