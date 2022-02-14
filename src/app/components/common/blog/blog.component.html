@@ -2,20 +2,20 @@
     <div class="container">
         <div class="section-title" *ngIf="data">
             <img [src]= "data.Image.url">
-            <p class="p.text-2">{{data.sectionTitleDesc}}</p>
+            <p class="texto-p">{{data.sectionTitleDesc}}</p>
         </div>
         <div class="row justify-content-center" *ngIf="data2">
-            <div class="col-lg-4 col-md-6" *ngFor="let content of data2.slice(0, 3);">
+            <div class="col-lg-4 col-md-6" *ngFor="let content of data.TOP;">
                 <div class="single-blog-post">
                     <div class="image">
                         <a 
                             [routerLink]="['/blog', content.slug]" 
                             class="d-block"
                         >
-                            <img [src]="content.image.url" alt="blog-image">
+                            <img [src]="content.imagen.url" alt="blog-image">
                         </a>
                     </div>
-                    <div class="content">
+                    <!--div class="content">
                         <ul class="meta">
                             <li><a routerLink="/blog">{{content.category}}</a></li>
                             <li>{{content.date | date}}</li>
@@ -27,7 +27,7 @@
                                 {{content.title}}
                             </a>
                         </h3>
-                    </div>
+                    </div-->
                 </div>
             </div>
         </div>
