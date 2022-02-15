@@ -7,7 +7,7 @@
             </div>
             <div class="col-lg-6 col-md-5">
                 <ul class="page-title-content">
-                    <li><a routerLink="/">Home</a></li>
+                    <li><a routerLink="/">Inicio</a></li>
                     <li>Catálogo</li>
                 </ul>
             </div>
@@ -18,7 +18,7 @@
 <!-- Products -->
 <div class="products-area ptb-100">
     <div class="container" *ngIf="data">
-        <div class="vaxim-grid-sorting row align-items-center">
+        <!--div class="vaxim-grid-sorting row align-items-center">
             <div class="col-lg-6 col-md-6 result-count">
                 <p>We found <span class="count">some</span> products available for you</p>
             </div>
@@ -34,7 +34,7 @@
                     </select>
                 </div>
             </div>
-        </div>
+        </div-->
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6" *ngFor="let Content of data | paginate: { itemsPerPage: 9, currentPage: shopGrid }">
                 <div class="single-products-box">
@@ -58,24 +58,24 @@
                             >
                                 <i class="fas fa-search-plus"></i>
                                 <span class="tooltip-label"
-                                    >Quick View</span
+                                    >Vista Previa</span
                                 >
                             </button>
                         </li>
-                        <li>
+                        <!--li>
                             <a routerLink="/compare">
                                 <i class="fas fa-exchange-alt"></i>
                                 <span class="tooltip-label">Compare</span>
                             </a>
-                        </li>
-                        <li>
+                        </li-->
+                        <!--li>
                             <a routerLink="/wishlist">
                                 <i class="far fa-heart"></i>
                                 <span class="tooltip-label"
                                     >Add to Wishlist</span
                                 >
                             </a>
-                        </li>
+                        </li-->
                     </ul>
                     <span class="sale" *ngIf="Content.onSell"
                         >SALE</span
@@ -116,7 +116,8 @@
     </div>
 </div>
 
-<app-subscribe></app-subscribe>
+
+<app-footer></app-footer>
 
 <ng-template #modalData let-modal>
     <button
@@ -151,32 +152,30 @@
                     <p>{{ product.shortDesc }}</p>
                     <ul class="products-info">
                         <li>
-                            <span>Vendor:</span>
+                            <span>Vendedor:</span>
                             <a routerLink="/shop">{{ product.vendor }}</a>
                         </li>
-                        <li *ngIf="product.inStock">
-                            <span>Availability:</span> 
+                        <!--li *ngIf="product.inStock">
+                            <span>Availability:</span>
                             In stock
-                        </li>
+                        </li-->
                         <li>
-                            <span>Categories:</span>
-                            <a routerLink="/shop">Hoodie</a>
+                            <span>Categoria:</span>
+                            <a routerLink="/shop" *ngIf="product.category"> {{product.category.name}}</a>
                         </li>
                     </ul>
                     <div class="products-add-to-cart">
-                        <button
-                            (click)="addToCart(product)"
-                            type="submit"
-                            class="default-btn"
-                        >
-                            <i class="fas fa-shopping-bag"></i> ADD TO CART
-                        </button>
+                        <a href="#">
+                            <img src="../../../assets/img/wsp-1.png" />
+                        </a>
                         <a
-                            routerLink="/wishlist"
-                            title="Add to Wishlist"
+                            href="tel:+56992302311"
+
                             class="add-to-wishlist-btn"
-                            ><i class="far fa-heart"></i
-                        ></a>
+                            >
+                            <i class="fa fa-phone"></i>
+                            +56992302311
+                        </a>
                     </div>
                 </div>
             </div>

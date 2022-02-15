@@ -1,42 +1,16 @@
-<footer class="footer-area">
+<footer class="footer-area mt-100">
     <div class="container" *ngIf="data">
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-md-12">
-                <div class="single-footer-widget pr-5">
-                    <a routerLink="/" class="logo">
-                        <img [src]="data.logo.url" alt="logo">
-                    </a>
-                    <p>{{data.desc}}</p>
-                    <a *ngIf="data.locationLink" href="{{data.locationLink}}" target="_blank" class="location">Check our shop in Google Map</a>
-                    <div class="phone" *ngIf="data.phoneNumber">
-                        <span>Phone:</span>
-                        <a href="tel:{{data.phoneNumber}}">{{data.phoneNumber}}</a>
-                    </div>
-                </div>
+        <div class="row mt-100">
+            <div class="col-lg-4 col-md-4 col-md-12">
+
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-4" *ngFor="let content of data.singleFooterWidgetList;">
-                <div class="single-footer-widget">
-                    <h3>{{content.title.title}}</h3>
-                    <ul class="custom-links">
-                        <li *ngFor="let item of content.widgetMenuList;"><a routerLink="{{item.link}}">{{item.title}}</a></li>
-                    </ul>
-                    <ul class="custom-links">
-                        <li *ngFor="let title of content.widgetSocial;"><a routerLink="{{title.link}}">{{title.name}}</a></li>
-                    </ul>
-                </div>
+            <div class="col-lg-4 col-md-4 col-md-12">
+                       <img src="{{data.logo.url}}" class="img-responsive top">
             </div>
-        </div>
-        <div class="copyright-area">
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-7 col-sm-7">
-                    <p>{{data.copyrightText}} <strong>{{data.copyrightAuthor}}</strong></p>
-                </div>
-                <div class="col-lg-6 col-md-5 col-sm-5">
-                    <div class="payment-type">
-                        <img [src]="data.paymentType.url" alt="payment-type">
-                    </div>
-                </div>
+            <div class="col-lg-4 col-md-4 col-md-12">
+
             </div>
+
         </div>
     </div>
 </footer>

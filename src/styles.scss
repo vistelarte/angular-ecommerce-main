@@ -524,7 +524,7 @@ textarea.form-control {
         }
         .modal-body {
             padding: 0;
-            
+
             .image {
                 text-align: center;
             }
@@ -553,7 +553,7 @@ textarea.form-control {
                     li {
                         color: var(--optionalColor);
                         margin-bottom: 8px;
-    
+
                         &:last-child {
                             margin-bottom: 0;
                         }
@@ -564,7 +564,7 @@ textarea.form-control {
                             margin-left: 5px;
                             display: inline-block;
                             color: var(--optionalColor);
-    
+
                             &:hover {
                                 color: var(--mainColor);
                             }
@@ -573,7 +573,7 @@ textarea.form-control {
                 }
                 .products-add-to-cart {
                     margin-top: 20px;
-    
+
                     .input-counter {
                         max-width: 190px;
                         min-width: 190px;
@@ -592,7 +592,7 @@ textarea.form-control {
                             color: var(--optionalColor);
                             background-color: transparent;
                             transition: var(--transition);
-    
+
                             &.minus-btn {
                                 left: 0;
                                 border-right: 1px solid #eeeeee;
@@ -624,7 +624,7 @@ textarea.form-control {
                         }
                     }
                     .add-to-wishlist-btn {
-                        width: 47px;
+
                         height: 47px;
                         font-size: 20px;
                         line-height: 47px;
@@ -680,7 +680,7 @@ textarea.form-control {
     margin-bottom: 0;
     text-align: end;
     padding-left: 0;
-    
+
     li {
         z-index: 1;
         font-weight: 500;
@@ -714,7 +714,7 @@ textarea.form-control {
         }
         &:last-child {
             padding-left: 15px;
-            
+
             &::before {
                 display: none;
             }
@@ -804,7 +804,7 @@ textarea.form-control {
                 li {
                     margin-bottom: 12px;
                     color: var(--optionalColor);
-                    
+
                     strong {
                         color: var(--blackColor);
                     }
@@ -866,7 +866,7 @@ textarea.form-control {
                 transition: var(--transition);
                 border: 2px solid #f5f3f3;
                 background-color: transparent;
-                
+
                 &:hover, &.current {
                     color: var(--whiteColor);
                     border-color: var(--mainColor);
@@ -980,7 +980,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -997,7 +997,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1082,7 +1082,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1099,7 +1099,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1180,7 +1180,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1197,7 +1197,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1278,7 +1278,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1295,7 +1295,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1376,7 +1376,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1393,7 +1393,7 @@ textarea.form-control {
 
             a {
                 color: var(--mainColor);
-    
+
                 &:hover {
                     text-decoration: underline;
                 }
@@ -1475,7 +1475,7 @@ textarea.form-control {
         li {
             color: var(--optionalColor);
             margin-bottom: 15px;
-            
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -1592,7 +1592,7 @@ blockquote, .blockquote {
     .shape2 {
         display: none;
     }
-    
+
     .home-wrapper-slides {
         .owl-theme {
             .owl-nav {
@@ -1679,7 +1679,7 @@ blockquote, .blockquote {
         }
         .modal-content {
             padding: 15px;
-    
+
             .modal-body {
                 .content {
                     margin-top: 20px;
@@ -1688,11 +1688,11 @@ blockquote, .blockquote {
                         font-size: 18px;
                     }
                     .products-add-to-cart {
-        
+
                         .input-counter {
                             max-width: 150px;
                             min-width: 150px;
-    
+
                             span {
                                 font-size: 14px;
                                 line-height: 40px;
@@ -1703,7 +1703,7 @@ blockquote, .blockquote {
                             }
                         }
                         .add-to-wishlist-btn {
-                            width: 41px;
+
                             height: 41px;
                             font-size: 18px;
                             line-height: 41px;
@@ -1737,7 +1737,7 @@ blockquote, .blockquote {
         .nav-tabset {
             margin-bottom: 20px;
             border-bottom: none;
-    
+
             .nav-tab {
                 margin: {
                     left: 10px;
@@ -1807,10 +1807,10 @@ blockquote, .blockquote {
     .faq-accordion {
         .panel-group {
             .panel-heading {
-                .panel-title {    
+                .panel-title {
                     a {
                         font-size: 15px;
-        
+
                         &::before {
                             top: 6px;
                             font-size: 12px;
@@ -1935,7 +1935,7 @@ blockquote, .blockquote {
 
 /* Min width 576px to Max width 767px */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
-    
+
     .products-slides {
         .owl-theme {
             .owl-nav {
@@ -1967,7 +1967,7 @@ blockquote, .blockquote {
         .nav-tabset {
             border-bottom: 1px solid #eeeeee !important;
             margin-bottom: 25px;
-    
+
             .nav-tab {
                 margin-bottom: 0;
             }
@@ -2096,20 +2096,20 @@ blockquote, .blockquote {
         }
         .modal-content {
             padding: 25px;
-    
+
             .modal-body {
                 .content {
                     h3 {
                         font-size: 20px;
                     }
                     .products-add-to-cart {
-        
+
                         .input-counter {
                             max-width: 168px;
                             min-width: 168px;
                         }
                         .add-to-wishlist-btn {
-                            width: 42px;
+
                             height: 42px;
                             font-size: 20px;
                             line-height: 42px;
@@ -2123,7 +2123,7 @@ blockquote, .blockquote {
     .products-details-tabs {
         .nav-tabset {
             margin-bottom: 25px;
-    
+
             .nav-tab {
                 span {
                     font-size: 18px;
@@ -2180,7 +2180,7 @@ blockquote, .blockquote {
     .faq-accordion {
         .panel-group {
             .panel-heading {
-                .panel-title {    
+                .panel-title {
                     a {
                         font-size: 17px;
                     }
@@ -2200,7 +2200,7 @@ blockquote, .blockquote {
 
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    
+
     .home-wrapper-slides {
         .owl-theme {
             .owl-nav {
@@ -2227,7 +2227,7 @@ blockquote, .blockquote {
 
 /* Min width 1200px to Max width 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-    
+
     .home-wrapper-slides {
         .owl-theme {
             .owl-nav {
@@ -2246,7 +2246,7 @@ blockquote, .blockquote {
 
 /* Min width 1550px */
 @media only screen and (min-width: 1550px) {
-    
+
     .home-wrapper-slides {
         .owl-theme {
             .owl-nav {

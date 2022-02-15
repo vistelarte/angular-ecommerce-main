@@ -1,4 +1,4 @@
-<div class="blog-area pt-100 pb-70">
+<div class="blog-area pt-30 pb-70">
     <div class="container">
         <div class="section-title" *ngIf="data">
             <img [src]= "data.Image.url">
@@ -8,8 +8,8 @@
             <div class="col-lg-4 col-md-6" *ngFor="let content of data.TOP;">
                 <div class="single-blog-post">
                     <div class="image">
-                        <a 
-                            [routerLink]="['/blog', content.slug]" 
+                        <a
+                            [routerLink]="['/shop']"
                             class="d-block"
                         >
                             <img [src]="content.imagen.url" alt="blog-image">
@@ -21,7 +21,7 @@
                             <li>{{content.date | date}}</li>
                         </ul>
                         <h3>
-                            <a 
+                            <a
                                 [routerLink]="['/blog', content.slug]"
                             >
                                 {{content.title}}

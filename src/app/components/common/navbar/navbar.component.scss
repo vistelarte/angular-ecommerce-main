@@ -77,8 +77,8 @@
                     color: var(--blackColor);
                     transition: var(--transition);
                     font: {
-                        weight: 500;
-                        size: var(--fontSize);
+                        weight: 700;
+                        size: 24px;
                     };
                     padding: {
                         left: 0;
@@ -89,6 +89,7 @@
                     &:hover, &.active {
                         color: var(--mainColor);
                     }
+
                 }
                 .dropdown-toggle {
                     padding-right: 12px;

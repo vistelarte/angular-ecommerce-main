@@ -10,6 +10,9 @@ export interface Product {
     inStock: boolean;
     LongDesc: string;
     addInfo: string;
+    category: {
+        name: string;
+    },
     frontImg: {
         url: string;
     };
@@ -18,7 +21,6 @@ export interface Product {
     };
     slug: string;
     reviews: string;
-    category: string;
     onSell: boolean;
     outOfStock: boolean;
     hot: boolean;

@@ -1,14 +1,9 @@
 <div class="subscribe-area pb-100">
     <div class="container" *ngIf="data">
-        <div class="subscribe-inner" style="background-image: url({{data.bgImage.url}});">
-            <div>
-                <h2>{{data.title}}</h2>
-                <p class="p_texto">{{data.desc}}</p>
-               <!--> <form class="newsletter-form">
-                    <input type="email" class="input-newsletter" placeholder="Enter your email address" required>
-                    <button type="submit"><i class="far fa-paper-plane"></i>SUBSCRIBE NOW</button> 
-                </form>-->
-            </div>
+        <img class="img-responsive" src="{{data.bgImage.url}}" />
+        <div>
+            <p class="texto-p">{{data.desc}}</p>
+
         </div>
     </div>
 </div>
