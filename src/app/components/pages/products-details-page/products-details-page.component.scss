@@ -1,6 +1,10 @@
 .leter{
     font-size: 24px;
 }
+.default-btn{
+    margin-top: 50px;
+}
+
 .products-details-image {
     overflow: hidden;
 
@@ -90,7 +94,7 @@
             min-width: 130px;
             margin-right: 15px;
             text-align: center;
-            position: relative;    
+            position: relative;
 
             span {
                 top: 0;
@@ -134,7 +138,7 @@
                 }
             }
         }
-        input[type=number]::-webkit-inner-spin-button,  input[type=number]::-webkit-outer-spin-button {  
+        input[type=number]::-webkit-inner-spin-button,  input[type=number]::-webkit-outer-spin-button {
             opacity: 1;
         }
     }
@@ -185,7 +189,7 @@
                     border: 1px solid var(--mainColor);
                     text-align: center;
                     margin-left: 5px;
-    
+
                     &:hover {
                         color: var(--mainColor);
                         background-color: transparent;
@@ -246,7 +250,7 @@
             margin-bottom: 20px;
             padding: 0 0 20px 110px;
             border-bottom: 1px solid #eeeeee;
-    
+
             img {
                 top: 0;
                 left: 0;
@@ -262,14 +266,14 @@
             .review-rating {
                 display: block;
                 margin-bottom: 10px;
-    
+
                 .review-stars {
                     i {
                         font-size: 14px;
                         color: #cecfd2;
                         margin-right: 4px;
                         display: inline-block;
-        
+
                         &.checked {
                             color: orange;
                         }
@@ -387,7 +391,7 @@
 
 /* Min width 768px to Max width 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-    
+
     .products-details-desc {
         padding-left: 0;
         margin-top: 30px;
@@ -413,7 +417,7 @@
 
 /* Min width 992px to Max width 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-    
+
     .products-details-area {
         .row {
             &.align-items-center {
