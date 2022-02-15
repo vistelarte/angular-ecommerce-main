@@ -17,6 +17,7 @@ export class ProductsDetailsPageComponent implements OnInit {
     private API_URL = environment.API_URL;
     public slug: any;
     public data: any;
+    public message = '';
 
     constructor(
         private route: ActivatedRoute,
@@ -37,9 +38,8 @@ export class ProductsDetailsPageComponent implements OnInit {
 
     ngOnInit(): void {}
 
-    addToCart(product: Product, quantity: number) {
-        this.cartService.addToCart(product, quantity);
-        this.notifier.notify('success', 'Your product added to the cart!');
+    addToCart(product: Product) {
+        this.message = encodeURIComponent("Hola, me gustaria consultar por este producto: " + window.location.href);
     }
 
     productsSlides: OwlOptions = {
