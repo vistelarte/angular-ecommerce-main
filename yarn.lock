@@ -3889,6 +3889,11 @@ jest-worker@^27.4.1:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
+js-sha256@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/js-sha256/-/js-sha256-0.9.0.tgz#0b89ac166583e91ef9123644bd3c5334ce9d0966"
+  integrity sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA==
+
 js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4503,12 +4508,12 @@ ngx-modal@0.0.29:
   resolved "https://registry.yarnpkg.com/ngx-modal/-/ngx-modal-0.0.29.tgz#698aa252a79323a0ca47ad4ddee994d620ae6f15"
   integrity sha1-aYqiUqeTI6DKR61N3umU1iCubxU=
 
-ngx-owl-carousel-o@^6.0.0:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/ngx-owl-carousel-o/-/ngx-owl-carousel-o-6.0.2.tgz#15abf83ab37fd6f347e53bbcfc8e72bcb371297b"
-  integrity sha512-pB9RwWw/WMe2RojHCYc/a55ETy63tDD5g41DficofjL9c0g4Ht6oN9SD7HFlhhDKOIKcXcJXOZQHihAdbiazpw==
+ngx-owl-carousel-o@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-owl-carousel-o/-/ngx-owl-carousel-o-7.0.1.tgz#df2c8bab3d700ad0c21c7274f8bc0be01b26132b"
+  integrity sha512-pUVk6mb0OlwD4OMGLiTTJdhNR08LpXdBFO5rGU8b8qNvP61kljfqDFAfv/R7GP+70boBu8TyzFk6jTBGgnVEPw==
   dependencies:
-    tslib "^2.1.0"
+    tslib "^2.3.0"
 
 ngx-pagination@^5.1.1:
   version "5.1.1"

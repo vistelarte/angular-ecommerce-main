@@ -5,18 +5,19 @@
         "baseUrl": "./",
         "outDir": "./dist/out-tsc",
         "forceConsistentCasingInFileNames": true,
-        "strict": true,
+        "strict": false,
         "noImplicitReturns": true,
         "noFallthroughCasesInSwitch": true,
-        "sourceMap": true,
+        "sourceMap": false,
         "declaration": false,
         "downlevelIteration": true,
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "importHelpers": true,
-        "target": "es2017",
+        "target": "es2015",
         "module": "esnext",
-        "lib": ["es2018", "dom"]
+        "lib": ["es2015", "dom"],
+
     },
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
