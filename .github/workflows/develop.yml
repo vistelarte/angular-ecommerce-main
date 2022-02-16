@@ -27,4 +27,4 @@ jobs:
         cat .env
 
     - run: npm ci
-    - run: npm run start --port 80 --host 0.0.0.0
+    - run: npm run start
