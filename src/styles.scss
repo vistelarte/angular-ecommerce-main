@@ -244,17 +244,25 @@ textarea.form-control {
                 color: var(--blackColor);
                 transition: var(--transition);
                 background-color: var(--whiteColor);
-
+                border:  1px solid;
+                border-color:  #D6D6D6;
                 i {
                     left: 0;
                     right: 0;
                     top: 50%;
+                    transition: var(--transition);
                     position: absolute;
                     transform: translateY(-50%);
+                    &:hover{
+                        font-size: 40px;
+                    }
                 }
                 &:hover {
-                    color: var(--whiteColor);
-                    background-color: var(--mainColor);
+
+                    background-color:   #D6D6D6;
+                    i {
+                        font-size: 40px;
+                    }
                 }
             }
         }
