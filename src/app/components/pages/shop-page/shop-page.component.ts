@@ -10,6 +10,7 @@ import { ShopPageService } from './shop-page.service';
 import { CartService } from '../../../cart.service';
 import { ModalService } from '../../../modal.service';
 import { Product } from 'src/app/product';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-shop-page',
@@ -22,22 +23,32 @@ export class ShopPageComponent implements OnInit {
     modalProduct = this.modalViewService.getProduct();
     private readonly notifier: NotifierService;
     closeModal: any;
-
+    type = 0;
+    category = 0;
     public data: any;
-
+    public message: string | undefined;
     constructor(
         private modalService: NgbModal,
         private content: ShopPageService,
         private cartService: CartService,
         private modalViewService: ModalService,
-        notifierService: NotifierService
+        notifierService: NotifierService,
+        private route: ActivatedRoute
     ) {
-        this.content.getData().subscribe((data: any) => {
+        this.route.queryParams
+        .subscribe(params => {
+          this.type = parseInt(params.type);
+          this.category = parseInt(params.category);
+          this.content.getData( this.type,this.category).subscribe((data: any) => {
             this.data = this.shuffle(data);
 
         });
+        }
+      );
+     
         this.notifier = notifierService;
     }
+    
     shuffle(array: any) {
         let currentIndex = array.length,  randomIndex;
 
@@ -58,8 +69,7 @@ export class ShopPageComponent implements OnInit {
 
 
     addToCart(product: Product) {
-        this.cartService.addToCart(product);
-        this.notifier.notify('success', 'Your product added to the cart!');
+        this.message = encodeURIComponent("Hola, me gustaria consultar por este producto: " + window.location.href + '/' + product.slug);
     }
 
     addToModal(product: Product) {

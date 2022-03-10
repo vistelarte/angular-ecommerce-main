@@ -10,8 +10,15 @@ export class ShopPageService {
 
     constructor(private http:HttpClient) {}
 
-    getData(){
-        let url = `${this.API_URL}/products?_sort=id:DESC`;
+    getData(type?: number,category?: number){
+        let filter = '';
+        if(type){
+            filter +='&type='+type;
+        }
+        if(category){
+            filter +='&category='+category;
+        }
+        let url = `${this.API_URL}/products?_sort=id:DESC${filter}`;
         return this.http.get(url);
     }
 }
