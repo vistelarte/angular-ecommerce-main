@@ -90,12 +90,13 @@
                                 Content.title
                             }}</a>
                         </h3>
-                        <button
-                            class="add-to-cart-btn"
-                            (click)="addToCart(Content)"
+                        <a
+                        (click)="addToCart(Content)"
+                        href="https://api.whatsapp.com/send/?phone=56947123456&text={{message}}&app_absent=1"
+                            target="_blank"
                         >
-                            Add to cart <i class="fas fa-cart-plus"></i>
-                        </button>
+                            Solicitar <i class="fas fa-cart-plus"></i>
+                        </a>
                         <div class="price">
                             <span class="old-price" *ngIf="Content.oldPrice">
                                 {{ Content.currencyType }}{{ Content.oldPrice }}

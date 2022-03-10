@@ -24,13 +24,17 @@ export class NavbarComponent implements OnInit {
         private navbar: NavbarService,
         private cartService: CartService
     ) {
-        this.navbar.getData().subscribe((data: any) => {
-            this.data = data;
-        });
         this.notifier = notifierService;
     }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.navbar.getData().subscribe((data: any) => {
+            this.data = data;
+            console.log(this.data);
+        });
+
+        
+    }
 
     classApplied = false;
     toggleClass() {

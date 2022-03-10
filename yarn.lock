@@ -4503,12 +4503,12 @@ ngx-modal@0.0.29:
   resolved "https://registry.yarnpkg.com/ngx-modal/-/ngx-modal-0.0.29.tgz#698aa252a79323a0ca47ad4ddee994d620ae6f15"
   integrity sha1-aYqiUqeTI6DKR61N3umU1iCubxU=
 
-ngx-owl-carousel-o@^6.0.0:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/ngx-owl-carousel-o/-/ngx-owl-carousel-o-6.0.2.tgz#15abf83ab37fd6f347e53bbcfc8e72bcb371297b"
-  integrity sha512-pB9RwWw/WMe2RojHCYc/a55ETy63tDD5g41DficofjL9c0g4Ht6oN9SD7HFlhhDKOIKcXcJXOZQHihAdbiazpw==
+ngx-owl-carousel-o@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/ngx-owl-carousel-o/-/ngx-owl-carousel-o-7.0.1.tgz#df2c8bab3d700ad0c21c7274f8bc0be01b26132b"
+  integrity sha512-pUVk6mb0OlwD4OMGLiTTJdhNR08LpXdBFO5rGU8b8qNvP61kljfqDFAfv/R7GP+70boBu8TyzFk6jTBGgnVEPw==
   dependencies:
-    tslib "^2.1.0"
+    tslib "^2.3.0"
 
 ngx-pagination@^5.1.1:
   version "5.1.1"

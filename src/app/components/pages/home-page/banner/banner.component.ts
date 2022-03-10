@@ -10,15 +10,21 @@ import { BannerService } from './banner.service';
 export class BannerComponent implements OnInit {
 
     public data : any;
-
+	isDragging:any;
 	constructor(private content : BannerService) {
-		this.content.getData().subscribe((data : any)=>{
-			this.data = data;
-		});
+		
 	}
 
     ngOnInit(): void {
+		this.content.getData().subscribe((data : any)=>{
+			this.data = data;
+			console.log(data.mainBannerSlides);
+		});
     }
+	decode(url:string){
+		console.log(url);
+		return encodeURI(url);
+	}
 
     homeSlides: OwlOptions = {
 		items: 1,
@@ -26,6 +32,7 @@ export class BannerComponent implements OnInit {
 		margin: 25,
 		loop: true,
 		dots: false,
+		URLhashListener:true,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
 		autoplay: true,

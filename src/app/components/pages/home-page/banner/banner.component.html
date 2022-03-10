@@ -2,19 +2,19 @@
     <div class="container-fluid">
         <div class="home-wrapper-slides">
             <owl-carousel-o [options]="homeSlides">
-                <ng-template carouselSlide *ngFor="let content of data.mainBannerSlides;">
+                <ng-template carouselSlide *ngFor="let c of data.mainBannerSlides;">
                     <div class="single-banner-item">
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-md-12">
                                 <div class="content">
-                                    <span class="sub-title">{{content.subTitle}}</span>
-                                    <h1>{{content.title}} <span>{{content.discount}}</span></h1>
-                                    <a routerLink="{{content.btnLink}}" class="default-btn"><i class="{{content.btnIcon}}"></i> {{content.btnText}}</a>
+                                    <span class="sub-title">{{c.subTitle}}</span>
+                                    <h1>{{c.title}} <span>{{c.discount}}</span></h1>
+                                    <a href="{{c.btnLink}}" class="default-btn" ><i class="{{c.btnIcon}}"></i> {{c.btnText}}</a>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12">
                                 <div class="image">
-                                    <img [src]="content.image.url" alt="banner-image">
+                                    <img [src]="c.image.url" alt="banner-image">
                                 </div>
                             </div>
                         </div>
